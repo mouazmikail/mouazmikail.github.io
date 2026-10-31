@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mouaz Mikail — IA · LLM · Évaluation frugale des modèles multimodaux</title>
-<meta name="description" content="Mouaz Mikail — Doctorant en intelligence artificielle. Évaluation des LLM et modèles vision-langage légers en contextes éducatifs à faibles ressources.">
+<meta name="description" content="Mouaz Mikail — Doctorant en intelligence artificielle. Évaluation des VLM et LLM à poids ouverts en contextes éducatifs à faibles ressources. Fondateur du CIAL (Tchad).">
 <style>
 :root{
   --bg:#f7f8fb; --ink:#0f172a; --muted:#5b6b82; --line:#e5e9f2;
@@ -56,8 +56,8 @@ h1{font-size:2.9rem;font-weight:900;letter-spacing:-.03em;margin:8px 0 4px}
 .socials a:hover{border-color:var(--brand);color:var(--brand);text-decoration:none}
 .photo{position:relative;justify-self:center}
 .photo img,.photo .ph{width:280px;height:280px;border-radius:50%;object-fit:cover;
-  border:6px solid #fff;box-shadow:var(--shadow);display:block;background:var(--soft);
-  display:flex;align-items:center;justify-content:center;
+  border:6px solid #fff;box-shadow:var(--shadow);display:block;background:var(--soft)}
+.photo .ph{display:flex;align-items:center;justify-content:center;
   font-size:4.4rem;font-weight:900;color:var(--brand)}
 .badge{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);
   background:var(--ink);color:#fff;font-size:.78rem;font-weight:700;
@@ -150,7 +150,8 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
     <div>
       <div class="hello" id="hello">Bonjour · مرحبا · Fànyà</div>
       <h1>Mouaz Mikail</h1>
-      <div class="role">Doctorant en intelligence artificielle — CY Cergy Paris Université · GRHAPES</div>
+      <div class="role">Doctorant en IA (évaluation de VLM) · Enseignant en informatique · Consultant
+      <br>CY Cergy Paris Université · GRHAPES</div>
       <div class="tagline">Évaluer les grands modèles là où les serveurs n'arrivent pas.</div>
       <p class="desc">Je travaille sur l'évaluation des LLM et des modèles vision-langage à
       poids ouverts en contextes éducatifs à faibles ressources : feedback automatique sur
@@ -167,14 +168,13 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
       &nbsp;&nbsp;<a class="btn ghost" href="mailto:mouaz.mikail@gmail.com">Collaborer</a>
     </div>
     <div class="photo">
-      <!-- Remplacez le bloc ci-dessous par : <img src="cv_canvas.png" alt="Mouaz Mikail"> -->
-      <div class="ph">MM</div>
+      <img src="cv_canvas.png" alt="Mouaz Mikail">
       <div class="badge">NLP · VLM · IA éducative</div>
     </div>
   </div>
 
   <div class="stats">
-    <div class="stat"><b data-n="5">0</b><span>articles (publiés / soumis)</span></div>
+    <div class="stat"><b data-n="6">0</b><span>publications (actes, journaux, poster)</span></div>
     <div class="stat"><b data-n="63">0</b><span>sujets d'examen · 1990–2023</span></div>
     <div class="stat"><b data-n="150">0</b><span>exercices doublement annotés</span></div>
     <div class="stat"><b data-n="10">0</b><span>années d'enseignement</span></div>
@@ -185,17 +185,18 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
 <section id="apropos"><div class="wrap">
   <div class="kicker">À propos</div>
   <h2>Du transformateur à la copie d'élève</h2>
-  <p class="lead">Ma recherche se situe à l'intersection du NLP, du deep learning et de
-  l'ingénierie éducative numérique. Elle part d'un constat simple : les benchmarks classiques
-  mesurent la capacité d'un modèle à <i>répondre</i>, jamais sa capacité à <i>corriger</i> —
-  et encore moins sa capacité à le faire sur le matériel réel des écoles. Ma thèse propose
+  <p class="lead">Ma recherche se situe à l'intersection du NLP et de l'ingénierie
+  éducative numérique. Elle part d'un constat simple : les benchmarks classiques mesurent
+  la capacité d'un modèle à <i>répondre</i>, jamais sa capacité à <i>corriger</i> — et
+  encore moins sa capacité à le faire sur le matériel réel des écoles. Ma thèse propose
   <b>Bench-Low</b>, un protocole tridimensionnel (capacité d'analyse, utilité pédagogique,
   efficience contrainte), le corpus <b>Data-Low</b> de copies manuscrites du baccalauréat
   tchadien annotées en cinq familles d'erreurs, et <b>Low-Eval-Kit</b>, un kit d'évaluation
   conteneurisé et reproductible.</p>
   <p class="lead" style="margin-top:14px">En parallèle, je contribue à la transférabilité de
-  l'IA vers les contextes éducatifs africains : comité national IA &amp; éducation (Tchad),
-  jurys de hackathons Zindi, co-chair du poster à AfriCHI 2027.</p>
+  l'IA vers les contextes éducatifs africains : fondateur du <b>CIAL</b> (Chad Institute of
+  Algorithms, N'Djamena), membre du comité national IA &amp; éducation (Tchad), ambassadeur
+  Zindi Africa et co-chair du poster à AfriCHI 2027.</p>
 </div></section>
 
 <!-- ================= RECHERCHE ================= -->
@@ -204,24 +205,27 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
   <div class="kicker">Axes de recherche</div>
   <h2>Cinq fils, un objectif : l'IA utile et vérifiable en classe</h2>
   <div class="cards">
-    <div class="card"><div class="ico">⚖️</div><h3>Évaluation frugale des LLM</h3>
+    <div class="card"><div class="ico">⚖️</div><h3>Évaluation frugale des LLM &amp; VLM</h3>
       <p>Mesurer le vrai coût des modèles (qualité, mémoire, latence) sur le matériel que les
-      écoles possèdent réellement — GPU d'entrée de gamme, CPU sans GPU, connectivité 4G.</p></div>
+      écoles possèdent réellement — GPU d'entrée de gamme, CPU sans GPU, connectivité 4G.
+      Fine-tuning et quantification 4-bit inclus.</p></div>
     <div class="card"><div class="ico">👁️</div><h3>Modèles vision-langage légers</h3>
       <p>Qwen2-VL, LLaVA, MiniCPM-V, InternVL : sélection multiobjectif par front de Pareto,
       robustesse de classement à 45 pondérations.</p></div>
     <div class="card"><div class="ico">🌍</div><h3>NLP à faibles ressources</h3>
-      <p>Français de classe sahélien, variétés de registre, évaluation multilingue et
-      biais linguistiques (−13 % mesurés entre registres B et C).</p></div>
+      <p>Langues africaines à faibles ressources, français de classe sahélien, variétés de
+      registre : biais linguistiques mesurés (−13 % entre registres B et C) et leviers
+      d'atténuation.</p></div>
     <div class="card"><div class="ico">✍️</div><h3>Feedback sur productions manuscrites</h3>
       <p>Détection et localisation d'erreurs sur copies réelles : taxonomie en cinq familles,
-      accord inter-annotateur κ = 0,74–0,88, audit des hallucinations pédagogiques.</p></div>
+      annotation de données, accord inter-annotateur κ = 0,74–0,88, audit des
+      hallucinations pédagogiques.</p></div>
     <div class="card"><div class="ico">🔁</div><h3>Reproductibilité</h3>
       <p>Low-Eval-Kit : pipeline conteneurisé, métadonnées complètes par exécution,
       recalcul des scores en une commande.</p></div>
     <div class="card"><div class="ico">🏫</div><h3>IA pour l'éducation en Afrique</h3>
       <p>Pilote terrain au Tchad (56 % de sessions hors ligne), gouvernance, formation des
-      enseignants et stratégie nationale.</p></div>
+      enseignants et stratégie nationale — du laboratoire à la classe.</p></div>
   </div>
 </div></section>
 
@@ -230,33 +234,43 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
   <div class="kicker">Actualités</div>
   <h2>Publications, événements &amp; engagements</h2>
   <div class="timeline">
-    <div class="t-item"><div class="t-date">2026–2027</div>
+    <div class="t-item"><div class="t-date">Juin – juillet 2027</div>
       <h4>AfriCHI 2027 — Co-chair Poster</h4>
-      <p>6ᵉ conférence africaine sur les interactions humain-ordinateur, Lagos (Nigeria).</p></div>
+      <p>6ᵉ conférence africaine sur l'interaction humain-machine, Lagos (Nigeria),
+      28 juin – 2 juillet 2027.</p></div>
+    <div class="t-item"><div class="t-date">18 août 2026</div>
+      <h4>Keynote — Journée scientifique au CNRD</h4>
+      <p>« De la représentation distribuée au transformer : quarante ans d'évolution vers
+      les grands modèles de langage. »</p></div>
+    <div class="t-item"><div class="t-date">27 juin 2026</div>
+      <h4>Conférencier invité — WenakLabs, Tchad</h4>
+      <p>« Le système éducatif tchadien à l'ère de l'intelligence artificielle générative :
+      défis, opportunités et perspectives pour l'éducation de demain. »</p></div>
     <div class="t-item"><div class="t-date">2026</div>
-      <h4>Article soumis à IEEE Access</h4>
-      <p>« Frugal Multimodal Alignment on the Pareto Front of Educational Utility » —
-      benchmark Bench-Low sur copies manuscrites.</p></div>
+      <h4>Deux articles soumis à IEEE Access</h4>
+      <p>Bench-Low (front de Pareto, copies manuscrites) et l'audit de confiance
+      (hallucinations, biais de registre, validation enseignante).</p></div>
     <div class="t-item"><div class="t-date">2026</div>
-      <h4>STE 2027 — Article accepté</h4>
-      <p>« Low-Eval-Kit : A Reproducible Toolkit for Frugal Evaluation of Multimodal Models » —
-      Bangkok, Thaïlande.</p></div>
+      <h4>STE 2027 — Deux articles acceptés</h4>
+      <p>Data-Low (corpus annoté du baccalauréat tchadien) et Low-Eval-Kit (kit
+      reproductible) — Bangkok, Thaïlande (Springer).</p></div>
     <div class="t-item"><div class="t-date">2026</div>
-      <h4>Conférence IA &amp; santé — Legal Academy Center</h4>
-      <p>Co-organisation à N'Djamena : bon usage de l'IA en santé, avec le ministère de la
-      Santé, les ordres et les facultés.</p></div>
-    <div class="t-item"><div class="t-date">2026</div>
-      <h4>STE 2026 — Article présenté</h4>
-      <p>« Data-Low : A Diachronic, Structured Corpus of Mathematics Exams from the Chadian
-      Baccalaureate » — Brașov, Roumanie (Springer).</p></div>
+      <h4>CIAL — Chad Institute of Algorithms (fondateur)</h4>
+      <p>Hub d'innovation technologique à N'Djamena : recherche appliquée, formation et
+      promotion des technologies numériques, spécialisation évaluation de LLM et science
+      des données.</p></div>
     <div class="t-item"><div class="t-date">2026</div>
       <h4>Comité national IA &amp; éducation — Tchad</h4>
       <p>Membre du comité chargé de la stratégie nationale d'intégration de l'IA dans le
       système éducatif tchadien.</p></div>
-    <div class="t-item"><div class="t-date">2025</div>
-      <h4>Conférencier invité — CNRD</h4>
-      <p>« De la représentation distribuée au transformer : quarante ans d'évolution vers
-      les grands modèles de langage. »</p></div>
+    <div class="t-item"><div class="t-date">30 octobre 2025</div>
+      <h4>Ambassadeur Zindi Africa — Tchad</h4>
+      <p>Président de jurys de hackathons dans plusieurs pays africains (agriculture
+      intelligente, IA &amp; santé).</p></div>
+    <div class="t-item"><div class="t-date">2024</div>
+      <h4>Conférence IA &amp; société — Rencontre des Esprits Numériques</h4>
+      <p>« Impact de l'intelligence artificielle sur la société tchadienne » — organisée
+      par Code For Chad (certificat de reconnaissance).</p></div>
   </div>
 </div></section>
 
@@ -264,7 +278,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
 <section id="publications" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
 <div class="wrap">
   <div class="kicker">Publications</div>
-  <h2>Articles de journaux et conférences</h2>
+  <h2>Articles de journaux, conférences et posters</h2>
 
   <div class="pub"><span class="venue">IEEE Access · soumis</span>
     <h4>Frugal Multimodal Alignment on the Pareto Front of Educational Utility: Benchmarking
@@ -274,7 +288,15 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
     sensibilité à 45 pondérations ; quantification NF4 (×20–30 mémoire/qualité).</div>
   </div>
 
-  <div class="pub"><span class="venue">STE 2026 · Springer</span>
+  <div class="pub"><span class="venue">IEEE Access · soumis</span>
+    <h4>Can Lightweight Vision-Language Models Be Trusted to Comment on Student Work?
+    Hallucinations, Linguistic Bias, and Teacher Validation of AI-Generated Feedback</h4>
+    <div class="authors">M. Mikail, S. Sakka</div>
+    <div class="note">34 % d'hallucinations pédagogiques (typologie à triage par gravité),
+    biais de registre −13 %, validation par 10 enseignants + analyse de puissance (n = 32).</div>
+  </div>
+
+  <div class="pub"><span class="venue">STE 2027 · Springer (accepté)</span>
     <h4>Data-Low: A Curated Corpus of Handwritten School Mathematics with a Validated
     Five-Family Error Taxonomy for Vision-Language Feedback</h4>
     <div class="authors">M. Mikail, S. Sakka, A. Malika</div>
@@ -290,7 +312,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
     recalcul des scores en une commande.</div>
   </div>
 
-  <div class="pub"><span class="venue">Benchmark ouvert</span>
+  <div class="pub"><span class="venue">STE 2026 · Springer</span>
     <h4>An Open-Source Benchmark for Enhancing Image Interpretation Across Four Scientific
     Disciplines Using Multimodal Large Language Models in Low-Resource Environments</h4>
     <div class="authors">M. Mikail, S. Sakka</div>
@@ -298,12 +320,11 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
     SceMQA — quatre disciplines scientifiques.</div>
   </div>
 
-  <div class="pub"><span class="venue">Étude compagnone</span>
-    <h4>Can Lightweight Vision-Language Models Be Trusted to Comment on Student Work?
-    Hallucinations, Linguistic Bias, and Teacher Validation of AI-Generated Feedback</h4>
+  <div class="pub"><span class="venue">Poster · TEDonnées 2024, Besançon</span>
+    <h4>Contribution aux modèles de systèmes question-réponse appliqués aux supports pédagogiques</h4>
     <div class="authors">M. Mikail, S. Sakka</div>
-    <div class="note">34 % d'hallucinations pédagogiques (typologie à triage par gravité),
-    biais de registre −13 %, validation par 10 enseignants + analyse de puissance (n = 32).</div>
+    <div class="note">Centre de Recherches Interdisciplinaires et Transculturelles (CRIT),
+    université de Franche-Comté.</div>
   </div>
 </div></section>
 
@@ -312,23 +333,29 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
   <div class="kicker">Enseignement &amp; expérience</div>
   <h2>Former, encadrer, faire vivre les laboratoires</h2>
   <div class="exp">
-    <div class="exp-item"><div class="when">2017 — 2026 · ENASTIC, Tchad</div>
-      <h4>Enseignant permanent en informatique</h4>
+    <div class="exp-item"><div class="when">2018 — 2026 · ENASTIC, Tchad</div>
+      <h4>Enseignant en informatique</h4>
       <p>Licence : fondamentaux de l'IA, programmation orientée objet, Python.
       Master : machine learning, deep learning, NLP. Encadrement de mémoires
       de licence et de master.</p></div>
     <div class="exp-item"><div class="when">2018 — 2025 · ENASTIC, Tchad</div>
-      <h4>Chef de service informatique &amp; laboratoires</h4>
+      <h4>Chef de service informatique &amp; gestion des laboratoires</h4>
       <p>Pilotage des infrastructures informatiques et pédagogiques, coordination de
       projets de digitalisation institutionnels, gestion d'équipes techniques.</p></div>
-    <div class="exp-item"><div class="when">2017 — 2018 · ANATS, Tchad</div>
-      <h4>Formateur en webmastering</h4>
-      <p>Formation des points focaux ministériels à la gestion de contenus web ;
-      contribution à la transformation numérique des services publics.</p></div>
-    <div class="exp-item"><div class="when">2016 — 2017 · UNOVA, France</div>
-      <h4>Point focal Tchad</h4>
+    <div class="exp-item"><div class="when">2021 · CEA-METIC, Saint-Louis, Sénégal</div>
+      <h4>Stage de recherche — Traitement du langage naturel</h4>
+      <p>Prétraitement, nettoyage et structuration de corpus textuels ; conception et
+      expérimentation de modèles de classification et d'analyse sémantique ; évaluation
+      et optimisation des performances.</p></div>
+    <div class="exp-item"><div class="when">2017 — 2018 · UNOVA, Limoges, France</div>
+      <h4>Chef de projet en transformation digitale</h4>
       <p>Suivi-évaluation du projet national de digitalisation du secteur numérique
-      tchadien ; portail web de la Présidence du Tchad.</p></div>
+      tchadien ; portail web de la Présidence du Tchad ; interface entre partenaires
+      internationaux (Afrique / Europe).</p></div>
+    <div class="exp-item"><div class="when">2016 — 2017 · ADETIC, Tchad</div>
+      <h4>Formateur bénévole</h4>
+      <p>Formation des points focaux des ministères à la gestion de contenus web ;
+      contribution à la transformation numérique des services publics.</p></div>
   </div>
 
   <h2 style="margin-top:52px;font-size:1.4rem;">Formation</h2>
@@ -339,15 +366,19 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
       Pareto Front of Educational Utility.</i></p></div>
     <div class="exp-item"><div class="when">2016 — 2020</div>
       <h4>Master en génie logiciel — INSTA</h4>
-      <p>Mémoire : classification métier des algorithmes d'apprentissage profond.</p></div>
+      <p>Mémoire : classification métier des familles d'algorithmes d'apprentissage
+      profond.</p></div>
   </div>
 
   <div class="cards" style="grid-template-columns:repeat(3,1fr);margin-top:44px;">
-    <div class="card"><h3>🗣️ Langues</h3><p>Français (DALF) · Anglais (B2) · Arabe</p></div>
-    <div class="card"><h3>🛠️ Techniques</h3><p>Python (POO) · PyTorch · Hugging Face ·
-      quantification 4-bit · SQL · Docker · analyse de données</p></div>
-    <div class="card"><h3>🏆 Distinctions</h3><p>Boursier du Gouvernement français ·
-      Banque islamique de développement (BID) · Banque africaine de développement (BAD)</p></div>
+    <div class="card"><h3>🗣️ Langues</h3><p>Français (DALF C2) · Anglais (B2) ·
+      Espagnol (A1)</p></div>
+    <div class="card"><h3>🛠️ Techniques</h3><p>Python (POO) · fine-tuning ·
+      quantification 4-bit · PyTorch · Hugging Face · SQL · administration de bases
+      de données · analyse de données</p></div>
+    <div class="card"><h3>🏆 Bourses &amp; distinctions</h3><p>Bourse d'excellence du
+      Gouvernement français · BID (PRODEST) · Gouvernement du Tchad · Prix du meilleur
+      projet de licence · Certificat Code For Chad (2024)</p></div>
   </div>
 </div></section>
 
@@ -369,6 +400,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);
 
 <footer><div class="wrap">
   © 2026 Mouaz Mikail — <a href="https://orcid.org/0009-0005-1552-1997">ORCID 0009-0005-1552-1997</a>
+  · <a href="https://mouazmikail.github.io/">mouazmikail.github.io</a>
   · Conçu avec sobriété numérique 🌱
 </div></footer>
 
@@ -382,7 +414,7 @@ const io=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting)retur
     if(p<1)requestAnimationFrame(step);})(t0);io.unobserve(el);});},{threshold:.5});
 stats.forEach(s=>io.observe(s));
 
-/* Salutations rotatives (clin d'œil au site de référence) */
+/* Salutations rotatives */
 const greetings=["Bonjour · مرحبا · Fànyà","Salam · Hello · Mbote","Lapta · Welcome · Barka"];
 const h=document.getElementById('hello');let gi=0;
 setInterval(()=>{gi=(gi+1)%greetings.length;h.style.opacity=0;
